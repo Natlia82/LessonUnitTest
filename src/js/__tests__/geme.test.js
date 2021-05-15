@@ -1,15 +1,6 @@
 import { expect } from '@jest/globals';
 import characterLife from '../game';
-/*
-test.each([
-        [{ name: 'Маг', health: 90 }, "healthy"],
-        [{ name: 'НЕ Маг', health: 50 }, "wounded"],
-        [{ name: 'не знаю кто', health: 10 }, "critical"],
-    ])('characterLife'),
-    (life, expectd) => {
-        const rezult = characterLife(life);
-        expect(rezult).toBe(expectd)
-    }*/
+
 
 test('rezult healthy', () => {
     const result = characterLife({ name: 'Маг', health: 90 });
